@@ -1,0 +1,48 @@
+Logging started at 12:00:56 on 03 Dec 2016
+QIIME version: 1.9.1
+
+qiime_config values:
+blastmat_dir	/qiime_software/blast-2.2.22-release/data
+pick_otus_reference_seqs_fp	/usr/local/lib/python2.7/dist-packages/qiime_default_reference/gg_13_8_otus/rep_set/97_otus.fasta
+sc_queue	all.q
+pynast_template_alignment_fp	/usr/local/lib/python2.7/dist-packages/qiime_default_reference/gg_13_8_otus/rep_set_aligned/85_otus.pynast.fasta
+cluster_jobs_fp	start_parallel_jobs.py
+assign_taxonomy_reference_seqs_fp	/usr/local/lib/python2.7/dist-packages/qiime_default_reference/gg_13_8_otus/rep_set/97_otus.fasta
+torque_queue	friendlyq
+jobs_to_start	1
+denoiser_min_per_core	50
+assign_taxonomy_id_to_taxonomy_fp	/usr/local/lib/python2.7/dist-packages/qiime_default_reference/gg_13_8_otus/taxonomy/97_otu_taxonomy.txt
+temp_dir	/tmp/
+blastall_fp	/qiime_software/blast-2.2.22-release/bin/blastall
+seconds_to_sleep	1
+
+parameter file values:
+
+Input file md5 sums:
+seqs.fna: cee86019a7b9011316a86acd7ef33950
+
+Executing commands.
+
+# Summarize Taxonomy command 
+summarize_taxa.py -i seqs.fna -o Desktop 
+
+
+
+*** ERROR RAISED DURING STEP: Summarize Taxonomy
+Command run was:
+ summarize_taxa.py -i seqs.fna -o Desktop 
+Command returned exit status: 1
+Stdout:
+
+Stderr
+Traceback (most recent call last):
+  File "/usr/local/bin/summarize_taxa.py", line 261, in <module>
+    main()
+  File "/usr/local/bin/summarize_taxa.py", line 160, in main
+    otu_table = load_table(otu_table_fp)
+  File "/usr/local/lib/python2.7/dist-packages/biom/parse.py", line 562, in load_table
+    raise TypeError("%s does not appear to be a BIOM file!" % f)
+TypeError: seqs.fna does not appear to be a BIOM file!
+
+
+Logging stopped at 12:00:58 on 03 Dec 2016

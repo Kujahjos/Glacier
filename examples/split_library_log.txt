@@ -1,0 +1,31 @@
+Input file paths
+Mapping filepath: map_Canionland.txt (md5: d995e84c164785d171125ed330e88594)
+Sequence read filepath: /Volumes/G-tech_RAID/Mi_seq/16Ny-Ålesund/fastq_joined/fastqjoin.join.fastq (md5: ebec585536ce3280ac1d2ad982195728)
+Barcode read filepath: /Volumes/G-tech_RAID/Mi_seq/16Ny-Ålesund/fastq_joined/fastqjoin.join_barcodes.fastq (md5: e14547d278b1e6de24cbf9223a038c75)
+
+Quality filter results
+Total number of input sequences: 10874650
+Barcode not in mapping file: 10406477
+Read too short after quality truncation: 79105
+Count of N characters exceeds limit: 0
+Illumina quality digit = 0: 0
+Barcode errors exceed max: 0
+
+Result summary (after quality filtering)
+Median sequence length: 445.00
+CL.BSC2.1	43398
+CL.BSC1.2	36702
+CL.BSC2.5	36165
+CL.BSC1.3	34854
+CL.BSC2.4	34763
+CL.Air.160511	33533
+CL.BSC2.2	33109
+CL.BSC2.3	33106
+CL.BSC1.5	28112
+CL.BSC1.1	27623
+CL.BSC1.4	27458
+CL.Air.160512	20245
+
+Total number seqs written	389068
+---
+
